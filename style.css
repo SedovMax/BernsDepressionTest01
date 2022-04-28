@@ -61,10 +61,8 @@ button:focus {
 .cont {
   width: 100%;
   height: 350px;
-  background: #122211;
-  border-radius: 5px;
+  background: #141414;
   color: #fff;
-  margin-bottom: 5px;
   padding: 10px;
 }
 
