@@ -1,39 +1,101 @@
+<!DOCTYPE html>
 <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <script>vkBridge.send('VKWebAppInit')</script>
+<script src="javascript.js"></script>
 <!-- Стили CSS -->
 <link rel="stylesheet" href="https://socoin.ru/index/assets/css/Montserrat.css">
 <link rel="stylesheet" href="style.css">
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Test</title>
+  </head>
+  <body>
+
+<h2>Шкала депрессии Бернса</h2>
+<h5>Заполняя опросник, внимательно прочитайте каждый пункт и оцените, как Вы себя чувствовали в течение последней недели, включая сегодняшний день.Если Вы сомневаетесь, дайте ответ, точнее других отражающий ваше состояние. Необходимо ответить на все вопросы. Независимо от результата это может быть Ваш первый шаг к улучшению эмоционального состояния.</h5>
+
 
 <!-- Начало теста -->
+    <div class="questions">
+      <div class="cont question-1">
+        <span>Вам грустно или вы в плохом настроении?</span>
+        <label><input type="radio" value="0" name="question-1">Ни разу</label>
+        <label><input type="radio" value="1" name="question-1">Иногда</label>
+        <label><input type="radio" value="2" name="question-1">Умеренно</label>
+        <label><input type="radio" value="3" name="question-1">Часто</label>
+        <label><input type="radio" value="4" name="question-1">Крайне часто</label>
+        <button class="button-1" type="button">Следующий вопрос</button>
+      </div>
+      <div class="cont question-2">
+        <span>Чувствуете грусть, удручены?</span>
+        <label><input type="radio" value="0" name="question-2">Ни разу</label>
+        <label><input type="radio" value="1" name="question-2">Иногда</label>
+        <label><input type="radio" value="2" name="question-2">Умеренно</label>
+        <label><input type="radio" value="3" name="question-2">Часто</label>
+        <label><input type="radio" value="4" name="question-2">Крайне часто</label>
+        <button class="button-2" type="button">Следующий вопрос</button>
+      </div>
+      <div class="cont question-3">
+        <span>Чувствуете уныние?</span>
+        <label><input type="radio" value="0" name="question-3">Ни разу</label>
+        <label><input type="radio" value="1" name="question-3">Иногда</label>
+        <label><input type="radio" value="2" name="question-3">Умеренно</label>
+        <label><input type="radio" value="3" name="question-3">Часто</label>
+        <label><input type="radio" value="4" name="question-3">Крайне часто</label>
+        <button class="button-3" type="button">Следующий вопрос</button>
+      </div>
+      <div class="cont question-4">
+        <span>Испытываете чувство безнадежности?</span>
+        <label><input type="radio" value="0" name="question-4">Ни разу</label>
+        <label><input type="radio" value="1" name="question-4">Иногда</label>
+        <label><input type="radio" value="2" name="question-4">Умеренно</label>
+        <label><input type="radio" value="3" name="question-4">Часто</label>
+        <label><input type="radio" value="4" name="question-4">Крайне часто</label>
+        <button class="button-4" type="button">Следующий вопрос</button>
+      </div>
+      <div class="cont question-5">
+        <span>Имеете низкую самооценку?</span>
+        <label><input type="radio" value="0" name="question-5">Ни разу</label>
+        <label><input type="radio" value="1" name="question-5">Иногда</label>
+        <label><input type="radio" value="2" name="question-5">Умеренно</label>
+        <label><input type="radio" value="3" name="question-5">Часто</label>
+        <label><input type="radio" value="4" name="question-5">Крайне часто</label>
+        <button class="button-5" type="button">Следующий вопрос</button>
+      </div>
+      <div class="cont question-6">
+        <span>Вам грустно или вы в плохом настроении?</span>
+        <label><input type="radio" value="0" name="question-6">Ни разу</label>
+        <label><input type="radio" value="1" name="question-6">Иногда</label>
+        <label><input type="radio" value="2" name="question-6">Умеренно</label>
+        <label><input type="radio" value="3" name="question-6">Часто</label>
+        <label><input type="radio" value="4" name="question-6">Крайне часто</label>
+        <button class="button-6" type="button">Следующий вопрос</button>
+      </div>
+      <div class="cont question-7">
+        <span>Испытываете чувство собственной ничтожности и непригодности?</span>
+        <label><input type="radio" value="0" name="question-7">Ни разу</label>
+        <label><input type="radio" value="1" name="question-7">Иногда</label>
+        <label><input type="radio" value="2" name="question-7">Умеренно</label>
+        <label><input type="radio" value="3" name="question-7">Часто</label>
+        <label><input type="radio" value="4" name="question-7">Крайне часто</label>
+        <button class="button-7" type="button">Следующий вопрос</button>
+      </div>
+      <div class="cont question-result">
+        <span>Результат <div class="result"></div></span>
+      </div>
+    </div>
 
-<div class="questions">
-  <div class="question-1">
-    <span>Вам грустно или вы в плохом настроении?</span>
-    <span for="0">Ниразу</span><input type="radio" id="0">
-    <input type="radio" id="1"><span for="1">Иногда</span>
-    <input type="radio" id="2"><span for="2">Умеренно</span>
-    <input type="radio" id="3"><span for="3">Часто</span>
-    <input type="radio" id="4"><span for="4">Крайне часто</span>
-  </div>
-  <div class="question-2">
-
-  </div>
-  <div class="question-3">
-
-  </div>
-  <div class="question-4">
-
-  </div>
-  <div class="question-5">
-
-  </div>
-  <div class="question-6">
-
-  </div>
-  <div class="question-7">
-
-  </div>
+    <!-- Конец теста -->
+  </body>
+</html>
+<div style="display:none;">
+<div class="bd1"></div>
+<div class="bd2"></div>
+<div class="bd3"></div>
+<div class="bd4"></div>
+<div class="bd5"></div>
+<div class="bd6"></div>
+<div class="bd7"></div>
 </div>
-
-<!-- Конец теста -->
