@@ -31,6 +31,30 @@ $(document).ready(function() {
   });
 // ====Переходы по вопросам ===========================================
 
+// ====Проверка кнопок=================================================
+
+$('[name*=question-1]').click(function() {
+  $(".button-1").removeAttr("disabled");
+});
+$('[name*=question-2]').click(function() {
+  $(".button-2").removeAttr("disabled");
+});
+$('[name*=question-3]').click(function() {
+  $(".button-3").removeAttr("disabled");
+});
+$('[name*=question-4]').click(function() {
+  $(".button-4").removeAttr("disabled");
+});
+$('[name*=question-5]').click(function() {
+  $(".button-5").removeAttr("disabled");
+});
+$('[name*=question-6]').click(function() {
+  $(".button-6").removeAttr("disabled");
+});
+$('[name*=question-7]').click(function() {
+  $(".button-7").removeAttr("disabled");
+});
+
 // ====Логика вычесления ==============================================
   $('.button-1').click(function(){
   	let res = $('input[name="question-1"]:checked').val();
