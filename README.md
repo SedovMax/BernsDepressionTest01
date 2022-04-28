@@ -1,3 +1,2 @@
-# sedov.github.io
+# sedov.quiz
 
-Бета тест
