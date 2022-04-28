@@ -59,7 +59,7 @@ button:focus {
   width: 200px;
 }
 .cont {
-  width: 600px;
+  width: auto;
   height: 200px;
   background: #122211;
   border-radius: 5px;
