@@ -56,12 +56,7 @@ button:focus {
 
 /* ================================== */
 
-.questions {
-  display: flex;
-  flex-direction: column;
-}
-
-.question-1 {
+[class*="question"] {
   display: flex;
   flex-direction: column;
 }
