@@ -55,8 +55,38 @@ button:focus {
 }
 
 /* ================================== */
+[class*="button"] {
+  width: 200px;
+}
+.cont {
+  width: 600px;
+  height: 200px;
+  background: #122211;
+  border-radius: 5px;
+  color: #fff;
+  margin-bottom: 5px;
+  padding: 10px;
+}
 
 [class*="question"] {
+  display: none;
+  flex-direction: column;
+}
+
+.question-result {
+  display: none;
+  flex-direction: column;
+}
+
+.questions {
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+}
+
+.active {
+  display: flex;
+  flex-direction: column;
 }
