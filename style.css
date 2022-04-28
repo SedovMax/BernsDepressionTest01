@@ -58,5 +58,5 @@ button:focus {
 
 [class*="question"] {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
