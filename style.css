@@ -1,0 +1,61 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Montserrat-Medium;
+  font-size: 18px;
+  background: #FFFFFF;
+  color: #2c2c2c;
+}
+/* Начало срол-бар */
+body::-webkit-scrollbar {
+  width: 0px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #ffffff00;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ffffff00;
+}
+/* Конец скрол-бар */
+
+h1, h2, h3, h4, h5, h6 {
+    color: #2c2c2c;
+    font-weight: 600;
+    line-height: 1.3;
+    font-family: Montserrat-Medium;
+}
+
+h2 {
+    margin-top: 1.3em;
+}
+
+a, a:hover, a:active {
+    color: #2688eb;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+b, strong {
+    font-weight: 600;
+}
+
+samp {
+    display: none;
+}
+
+button,
+button:active,
+button:focus {
+    outline: none;
+}
+
+/* ================================== */
+
+.questions {
+  display: flex;
+  flex-direction: column;
+}
