@@ -1,0 +1,27 @@
+@font-face {
+font-family: "VK-Bold";
+src: url("fonts/VKSansDisplay-Bold.ttf") format("truetype");
+font-style: normal;
+font-weight: normal;
+}
+
+@font-face {
+font-family: "VK-DemiBold";
+src: url("fonts/VKSansDisplay-DemiBold.ttf") format("truetype");
+font-style: normal;
+font-weight: normal;
+}
+
+@font-face {
+font-family: "VK-Medium";
+src: url("fonts/VKSansDisplay-Medium.ttf") format("truetype");
+font-style: normal;
+font-weight: normal;
+}
+
+@font-face {
+font-family: "VK-Regular";
+src: url("fonts/VKSansDisplay-Regular.ttf") format("truetype");
+font-style: normal;
+font-weight: normal;
+}
