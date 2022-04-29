@@ -59,10 +59,12 @@ button:focus {
   width: 200px;
 }
 .cont {
-  width: 100%;
-  height: 350px;
-  background: #141414;
+  width: 600px;
+  height: 200px;
+  background: #122211;
+  border-radius: 5px;
   color: #fff;
+  margin-bottom: 5px;
   padding: 10px;
 }
 
@@ -88,3 +90,4 @@ button:focus {
   display: flex;
   flex-direction: column;
 }
+/* =============================== */
