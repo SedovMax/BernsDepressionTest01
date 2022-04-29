@@ -59,6 +59,14 @@ button:focus {
 .description {
   display: flex;
   flex-direction: column;
+  margin-top: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+  padding: 8px;
+  background: #122211;
+  color:#fff;
+  font-size: 18px;
+  border-radius: 5px;
 }
 
 [class*="button"] {
@@ -73,6 +81,7 @@ button:focus {
   margin-bottom: 5px;
   padding: 10px;
   font-family: Montserrat-Bold;
+  padding: 8px;
 }
 
 [class*="question"] {
@@ -90,6 +99,7 @@ button:focus {
   flex-direction: row;
   width: auto;
   height: auto;
+  padding: 16px;
 }
 
 .active {
