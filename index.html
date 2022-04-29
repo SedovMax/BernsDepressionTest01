@@ -2,7 +2,7 @@
 <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <script>vkBridge.send('VKWebAppInit')</script>
-<script src="javascript.js"></script>
+<script src="script.js"></script>
 <!-- Стили CSS -->
 <link rel="stylesheet" href="https://socoin.ru/index/assets/css/Montserrat.css">
 <link rel="stylesheet" href="style.css">
@@ -13,10 +13,14 @@
   </head>
   <body>
 
+<h2>Шкала депрессии Бернса</h2>
+<h5>Заполняя опросник, внимательно прочитайте каждый пункт и оцените, как Вы себя чувствовали в течение последней недели, включая сегодняшний день.Если Вы сомневаетесь, дайте ответ, точнее других отражающий ваше состояние. Необходимо ответить на все вопросы. Независимо от результата это может быть Ваш первый шаг к улучшению эмоционального состояния.</h5>
+
+
 <!-- Начало теста -->
     <div class="questions">
       <div class="cont question-1">
-        <span>Вам грустно или вы в плохом настроении?</span>
+        <span>№1/25 Вам грустно или вы в плохом настроении?</span>
         <label><input type="radio" value="0" name="question-1">Ни разу</label>
         <label><input type="radio" value="1" name="question-1">Иногда</label>
         <label><input type="radio" value="2" name="question-1">Умеренно</label>
@@ -25,7 +29,7 @@
         <button class="button-1" type="button" disabled>Следующий вопрос</button>
       </div>
       <div class="cont question-2">
-        <span>Чувствуете грусть, удручены?</span>
+        <span>№2/25 Чувствуете грусть, удручены?</span>
         <label><input type="radio" value="0" name="question-2">Ни разу</label>
         <label><input type="radio" value="1" name="question-2">Иногда</label>
         <label><input type="radio" value="2" name="question-2">Умеренно</label>
@@ -34,7 +38,7 @@
         <button class="button-2" type="button" disabled>Следующий вопрос</button>
       </div>
       <div class="cont question-3">
-        <span>Чувствуете уныние?</span>
+        <span>№3/25 Чувствуете уныние?</span>
         <label><input type="radio" value="0" name="question-3">Ни разу</label>
         <label><input type="radio" value="1" name="question-3">Иногда</label>
         <label><input type="radio" value="2" name="question-3">Умеренно</label>
@@ -43,7 +47,7 @@
         <button class="button-3" type="button" disabled>Следующий вопрос</button>
       </div>
       <div class="cont question-4">
-        <span>Испытываете чувство безнадежности?</span>
+        <span>№4/25 Испытываете чувство безнадежности?</span>
         <label><input type="radio" value="0" name="question-4">Ни разу</label>
         <label><input type="radio" value="1" name="question-4">Иногда</label>
         <label><input type="radio" value="2" name="question-4">Умеренно</label>
@@ -52,7 +56,7 @@
         <button class="button-4" type="button" disabled>Следующий вопрос</button>
       </div>
       <div class="cont question-5">
-        <span>Имеете низкую самооценку?</span>
+        <span>№5/25 Имеете низкую самооценку?</span>
         <label><input type="radio" value="0" name="question-5">Ни разу</label>
         <label><input type="radio" value="1" name="question-5">Иногда</label>
         <label><input type="radio" value="2" name="question-5">Умеренно</label>
@@ -61,7 +65,7 @@
         <button class="button-5" type="button" disabled>Следующий вопрос</button>
       </div>
       <div class="cont question-6">
-        <span>Вам грустно или вы в плохом настроении?</span>
+        <span>№6/25 Вам грустно или вы в плохом настроении?</span>
         <label><input type="radio" value="0" name="question-6">Ни разу</label>
         <label><input type="radio" value="1" name="question-6">Иногда</label>
         <label><input type="radio" value="2" name="question-6">Умеренно</label>
@@ -70,7 +74,7 @@
         <button class="button-6" type="button" disabled>Следующий вопрос</button>
       </div>
       <div class="cont question-7">
-        <span>Испытываете чувство собственной ничтожности и непригодности?</span>
+        <span>№7/25 Испытываете чувство собственной ничтожности и непригодности?</span>
         <label><input type="radio" value="0" name="question-7">Ни разу</label>
         <label><input type="radio" value="1" name="question-7">Иногда</label>
         <label><input type="radio" value="2" name="question-7">Умеренно</label>
@@ -78,20 +82,174 @@
         <label><input type="radio" value="4" name="question-7">Крайне часто</label>
         <button class="button-7" type="button" disabled>Следующий вопрос</button>
       </div>
+      <div class="cont question-8">
+        <span>№8/25 Испытываете чувство вины или стыда?</span>
+        <label><input type="radio" value="0" name="question-8">Ни разу</label>
+        <label><input type="radio" value="1" name="question-8">Иногда</label>
+        <label><input type="radio" value="2" name="question-8">Умеренно</label>
+        <label><input type="radio" value="3" name="question-8">Часто</label>
+        <label><input type="radio" value="4" name="question-8">Крайне часто</label>
+        <button class="button-8" type="button" disabled>Следующий вопрос</button>
+      </div>
+      <div class="cont question-9">
+        <span>№9/25 Критикуете или обвиняете самого себя?</span>
+        <label><input type="radio" value="0" name="question-9">Ни разу</label>
+        <label><input type="radio" value="1" name="question-9">Иногда</label>
+        <label><input type="radio" value="2" name="question-9">Умеренно</label>
+        <label><input type="radio" value="3" name="question-9">Часто</label>
+        <label><input type="radio" value="4" name="question-9">Крайне часто</label>
+        <button class="button-9" type="button" disabled>Следующий вопрос</button>
+      </div>
+      <div class="cont question-10">
+        <span>№10/25 Испытываете трудности с принятием решений?</span>
+        <label><input type="radio" value="0" name="question-10">Ни разу</label>
+        <label><input type="radio" value="1" name="question-10">Иногда</label>
+        <label><input type="radio" value="2" name="question-10">Умеренно</label>
+        <label><input type="radio" value="3" name="question-10">Часто</label>
+        <label><input type="radio" value="4" name="question-10">Крайне часто</label>
+        <button class="button-10" type="button" disabled>Следующий вопрос</button>
+      </div>
+      <div class="cont question-11">
+        <span>№11/25 Чувствуете потерю интереса к членам семьи, друзьям, коллегам?</span>
+        <label><input type="radio" value="0" name="question-11">Ни разу</label>
+        <label><input type="radio" value="1" name="question-11">Иногда</label>
+        <label><input type="radio" value="2" name="question-11">Умеренно</label>
+        <label><input type="radio" value="3" name="question-11">Часто</label>
+        <label><input type="radio" value="4" name="question-11">Крайне часто</label>
+        <button class="button-11" type="button" disabled>Следующий вопрос</button>
+      </div>
+      <div class="cont question-12">
+        <span>№12/25 Испытываете одиночество?</span>
+        <label><input type="radio" value="0" name="question-12">Ни разу</label>
+        <label><input type="radio" value="1" name="question-12">Иногда</label>
+        <label><input type="radio" value="2" name="question-12">Умеренно</label>
+        <label><input type="radio" value="3" name="question-12">Часто</label>
+        <label><input type="radio" value="4" name="question-12">Крайне часто</label>
+        <button class="button-12" type="button" disabled>Следующий вопрос</button>
+      </div>
+      <div class="cont question-13">
+        <span>№13/25 Проводите меньше времени с семьей или с друзьями?</span>
+        <label><input type="radio" value="0" name="question-13">Ни разу</label>
+        <label><input type="radio" value="1" name="question-13">Иногда</label>
+        <label><input type="radio" value="2" name="question-13">Умеренно</label>
+        <label><input type="radio" value="3" name="question-13">Часто</label>
+        <label><input type="radio" value="4" name="question-13">Крайне часто</label>
+        <button class="button-13" type="button" disabled>Следующий вопрос</button>
+      </div>
+      <div class="cont question-14">
+        <span>№14/25 Чувствуете потерю мотивации?</span>
+        <label><input type="radio" value="0" name="question-14">Ни разу</label>
+        <label><input type="radio" value="1" name="question-14">Иногда</label>
+        <label><input type="radio" value="2" name="question-14">Умеренно</label>
+        <label><input type="radio" value="3" name="question-14">Часто</label>
+        <label><input type="radio" value="4" name="question-14">Крайне часто</label>
+        <button class="button-14" type="button" disabled>Следующий вопрос</button>
+      </div>
+      <div class="cont question-15">
+        <span>№15/25 Чувствуете потерю интереса к работе или другим занятиям?</span>
+        <label><input type="radio" value="0" name="question-15">Ни разу</label>
+        <label><input type="radio" value="1" name="question-15">Иногда</label>
+        <label><input type="radio" value="2" name="question-15">Умеренно</label>
+        <label><input type="radio" value="3" name="question-15">Часто</label>
+        <label><input type="radio" value="4" name="question-15">Крайне часто</label>
+        <button class="button-15" type="button" disabled>Следующий вопрос</button>
+      </div>
+      <div class="cont question-16">
+        <span>№16/25 Избегаете работы и другой деятельности?</span>
+        <label><input type="radio" value="0" name="question-16">Ни разу</label>
+        <label><input type="radio" value="1" name="question-16">Иногда</label>
+        <label><input type="radio" value="2" name="question-16">Умеренно</label>
+        <label><input type="radio" value="3" name="question-16">Часто</label>
+        <label><input type="radio" value="4" name="question-16">Крайне часто</label>
+        <button class="button-16" type="button" disabled>Следующий вопрос</button>
+      </div>
+      <div class="cont question-17">
+        <span>№17/25 Ощущаете потерю удовольствия и нехватку удовлетворения от жизни?</span>
+        <label><input type="radio" value="0" name="question-17">Ни разу</label>
+        <label><input type="radio" value="1" name="question-17">Иногда</label>
+        <label><input type="radio" value="2" name="question-17">Умеренно</label>
+        <label><input type="radio" value="3" name="question-17">Часто</label>
+        <label><input type="radio" value="4" name="question-17">Крайне часто</label>
+        <button class="button-17" type="button" disabled>Следующий вопрос</button>
+      </div>
+      <div class="cont question-18">
+        <span>№18/25 Чувствуете усталость?</span>
+        <label><input type="radio" value="0" name="question-18">Ни разу</label>
+        <label><input type="radio" value="1" name="question-18">Иногда</label>
+        <label><input type="radio" value="2" name="question-18">Умеренно</label>
+        <label><input type="radio" value="3" name="question-18">Часто</label>
+        <label><input type="radio" value="4" name="question-18">Крайне часто</label>
+        <button class="button-18" type="button" disabled>Следующий вопрос</button>
+      </div>
+      <div class="cont question-19">
+        <span>№19/25 Испытываете затруднения со сном или, наоборот, слишком много спите?</span>
+        <label><input type="radio" value="0" name="question-19">Ни разу</label>
+        <label><input type="radio" value="1" name="question-19">Иногда</label>
+        <label><input type="radio" value="2" name="question-19">Умеренно</label>
+        <label><input type="radio" value="3" name="question-19">Часто</label>
+        <label><input type="radio" value="4" name="question-19">Крайне часто</label>
+        <button class="button-19" type="button" disabled>Следующий вопрос</button>
+      </div>
+      <div class="cont question-20">
+        <span>№20/25 Имеете сниженный или, наоборот, повышенный аппетит?</span>
+        <label><input type="radio" value="0" name="question-20">Ни разу</label>
+        <label><input type="radio" value="1" name="question-20">Иногда</label>
+        <label><input type="radio" value="2" name="question-20">Умеренно</label>
+        <label><input type="radio" value="3" name="question-20">Часто</label>
+        <label><input type="radio" value="4" name="question-20">Крайне часто</label>
+        <button class="button-20" type="button" disabled>Следующий вопрос</button>
+      </div>
+      <div class="cont question-21">
+        <span>№21/25 Замечаете потерю интереса к сексу?</span>
+        <label><input type="radio" value="0" name="question-21">Ни разу</label>
+        <label><input type="radio" value="1" name="question-21">Иногда</label>
+        <label><input type="radio" value="2" name="question-21">Умеренно</label>
+        <label><input type="radio" value="3" name="question-21">Часто</label>
+        <label><input type="radio" value="4" name="question-21">Крайне часто</label>
+        <button class="button-21" type="button" disabled>Следующий вопрос</button>
+      </div>
+      <div class="cont question-22">
+        <span>№22/25 Беспокоитесь по поводу своего здоровья?</span>
+        <label><input type="radio" value="0" name="question-22">Ни разу</label>
+        <label><input type="radio" value="1" name="question-22">Иногда</label>
+        <label><input type="radio" value="2" name="question-22">Умеренно</label>
+        <label><input type="radio" value="3" name="question-22">Часто</label>
+        <label><input type="radio" value="4" name="question-22">Крайне часто</label>
+        <button class="button-22" type="button" disabled>Следующий вопрос</button>
+      </div>
+      <div class="cont question-23">
+        <span>№23/25 Имеются ли у вас суицидальные мысли?</span>
+        <label><input type="radio" value="0" name="question-23">Ни разу</label>
+        <label><input type="radio" value="1" name="question-23">Иногда</label>
+        <label><input type="radio" value="2" name="question-23">Умеренно</label>
+        <label><input type="radio" value="3" name="question-23">Часто</label>
+        <label><input type="radio" value="4" name="question-23">Крайне часто</label>
+        <button class="button-23" type="button" disabled>Следующий вопрос</button>
+      </div>
+      <div class="cont question-24">
+        <span>№24/25 Хотели бы вы окончить свою жизнь?</span>
+        <label><input type="radio" value="0" name="question-24">Ни разу</label>
+        <label><input type="radio" value="1" name="question-24">Иногда</label>
+        <label><input type="radio" value="2" name="question-24">Умеренно</label>
+        <label><input type="radio" value="3" name="question-24">Часто</label>
+        <label><input type="radio" value="4" name="question-24">Крайне часто</label>
+        <button class="button-24" type="button" disabled>Следующий вопрос</button>
+      </div>
+      <div class="cont question-25">
+        <span>№25/25 Планируете ли вы навредить себе?</span>
+        <label><input type="radio" value="0" name="question-25">Ни разу</label>
+        <label><input type="radio" value="1" name="question-25">Иногда</label>
+        <label><input type="radio" value="2" name="question-25">Умеренно</label>
+        <label><input type="radio" value="3" name="question-25">Часто</label>
+        <label><input type="radio" value="4" name="question-25">Крайне часто</label>
+        <button class="button-25" type="button" disabled>Следующий вопрос</button>
+      </div>
+
       <div class="cont question-result">
-        <span>Результат <div class="result"></div></span>
+        <span><div class="result"></div></span>
       </div>
     </div>
 
     <!-- Конец теста -->
   </body>
 </html>
-<div style="display:none;">
-<div class="bd1"></div>
-<div class="bd2"></div>
-<div class="bd3"></div>
-<div class="bd4"></div>
-<div class="bd5"></div>
-<div class="bd6"></div>
-<div class="bd7"></div>
-</div>
