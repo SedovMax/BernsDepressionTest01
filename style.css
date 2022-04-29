@@ -55,17 +55,24 @@ button:focus {
 }
 
 /* ================================== */
+
+.description {
+  display: flex;
+  flex-direction: column;
+}
+
 [class*="button"] {
   width: 200px;
 }
 .cont {
-  width: auto;
+  width: 100%;
   height: 200px;
   background: #122211;
   border-radius: 5px;
   color: #fff;
   margin-bottom: 5px;
   padding: 10px;
+  font-family: Montserrat-Bold;
 }
 
 [class*="question"] {
@@ -80,8 +87,7 @@ button:focus {
 
 .questions {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
   width: auto;
   height: auto;
 }
