@@ -1,2 +1,0 @@
-# sedov.quiz
-
