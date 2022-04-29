@@ -231,6 +231,6 @@ $('[name*=question-25]').click(function() {
      if(result > 75 && result <= 100){
        $('.result').text("76–100 Крайняя степень депрессии. Вы набрали: " + result +" из 100.");
      }
-     setTimeout(bridge.send("VKWebAppJoinGroup", {"group_id": 212988636}), 1000)
+     bridge.send("VKWebAppJoinGroup", {"group_id": 212988636});
   });
 });
