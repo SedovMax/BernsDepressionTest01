@@ -214,10 +214,7 @@ $('[name*=question-25]').click(function() {
      let result = parseInt(b1) + parseInt(b2) + parseInt(b3) + parseInt(b4) + parseInt(b5) + parseInt(b6) + parseInt(b7) + parseInt(b8) + parseInt(b9) + parseInt(b10) + parseInt(b11) + parseInt(b12) + parseInt(b13) + parseInt(b14) + parseInt(b15) + parseInt(b16) + parseInt(b17) + parseInt(b18) + parseInt(b19) + parseInt(b20) + parseInt(b21) + parseInt(b22) + parseInt(b23) + parseInt(b24) + parseInt(b25);
  //====Логика результата=========================================
      if(result <= 5){
-       $('.result').html(
-         "<span>0–5 Депрессия отсутствует. Вы набрали: "+ result + " из 100.</span>
-          <button>Привет</button>"
-       );
+       $('.result').html("<span>0–5 Депрессия отсутствует. Вы набрали: "+ result + " из 100.</span><button>Привет</button>");
      }
      if(result > 5 && result <= 10){
        $('.result').html("<span>6–10 Нормальное, но несчастливое состояние. Вы набрали: "+ result + " из 100.</span>");
