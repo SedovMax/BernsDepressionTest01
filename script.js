@@ -217,19 +217,19 @@ $('[name*=question-25]').click(function() {
       $('.result').html("<span>0–5 Депрессия отсутствует. Вы набрали: "+ result + " из 100.</span><button class='diagnostics'>Записаться на консультацию к психологу</button><button class='sub'>Подписаться на сообщество</   button>");
     }
     if(result > 5 && result <= 10){
-      $('.result').html("<span>6–10 Нормальное, но несчастливое состояние. Вы набрали: "+ result + " из 100.</span>");
+      $('.result').html("<span>6–10 Нормальное, но несчастливое состояние. Вы набрали: "+ result + " из 100.</span><button class='diagnostics'>Записаться на консультацию к психологу</button><button class='sub'>Подписаться на сообщество</   button>");
     }
     if(result > 10 && result <= 25){
-      $('.result').html("<span>11–25 Слабо выраженная депрессия. Вы набрали: " + result + " из 100.</span>");
+      $('.result').html("<span>11–25 Слабо выраженная депрессия. Вы набрали: " + result + " из 100.</span><button class='diagnostics'>Записаться на консультацию к психологу</button><button class='sub'>Подписаться на сообщество</   button>");
     }
     if(result > 25 && result <= 50){
-      $('.result').html("<span>26–50 Умеренная депрессия. Вы набрали: " + result + " из 100.</span>");
+      $('.result').html("<span>26–50 Умеренная депрессия. Вы набрали: " + result + " из 100.</span><button class='diagnostics'>Записаться на консультацию к психологу</button><button class='sub'>Подписаться на сообщество</   button>");
     }
     if(result > 50 && result <= 75){
-      $('.result').html("<span>51–75 Сильно выраженная депрессия. Вы набрали: " + result + " из 100.</span>");
+      $('.result').html("<span>51–75 Сильно выраженная депрессия. Вы набрали: " + result + " из 100.</span><button class='diagnostics'>Записаться на консультацию к психологу</button><button class='sub'>Подписаться на сообщество</   button>");
     }
     if(result > 75 && result <= 100){
-      $('.result').html("<span>76–100 Крайняя степень депрессии. Вы набрали: " + result + " из 100.</span>");
+      $('.result').html("<span>76–100 Крайняя степень депрессии. Вы набрали: " + result + " из 100.</span><button class='diagnostics'>Записаться на консультацию к психологу</button><button class='sub'>Подписаться на сообщество</   button>");
     }
 
   });
