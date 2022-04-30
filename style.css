@@ -56,14 +56,10 @@ button:focus {
 /* ================================== */
 
 .headbox {
-  display: flex;
-  align-items: center;
-  padding-left: 16px;
   width: 100%;
   height: 56px;
   background: #fff;
 }
-
 .top {
   font-size: 20px;
   color:#000;
@@ -95,6 +91,7 @@ button:focus {
 .cont {
   width: 100%;
   height: auto;
+  min-height:
   background: #fff;
   border-radius: 8px;
   margin-bottom: 5px;
@@ -130,7 +127,7 @@ label:hover {
    align-items: center;
    justify-content: center;
    width: 100%;
-   /* min-height: inherit; */
+   min-height: inherit;
    padding: 1px 16px;
    text-align: center;
    box-sizing: border-box;
