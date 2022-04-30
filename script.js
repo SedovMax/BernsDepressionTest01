@@ -214,23 +214,23 @@ $('[name*=question-25]').click(function() {
      let result = parseInt(b1) + parseInt(b2) + parseInt(b3) + parseInt(b4) + parseInt(b5) + parseInt(b6) + parseInt(b7) + parseInt(b8) + parseInt(b9) + parseInt(b10) + parseInt(b11) + parseInt(b12) + parseInt(b13) + parseInt(b14) + parseInt(b15) + parseInt(b16) + parseInt(b17) + parseInt(b18) + parseInt(b19) + parseInt(b20) + parseInt(b21) + parseInt(b22) + parseInt(b23) + parseInt(b24) + parseInt(b25);
  //====Логика результата=========================================
     if(result <= 5){
-      $('.result').html("<span style='color:Green; font-family: VK-Medium;'>0–5 Депрессия отсутствует. Вы набрали: "+ result + " из 100.</span><br><br><a href='https://vk.me/public212988636' class='diagnostics' target='_blank'>Записаться на консультацию к психологу</a>");
+      $('.result').html("<span style='color:Green; font-family: VK-Medium;'>0–5 Депрессия отсутствует. Вы набрали: "+ result + " из 100.</span><br><br><a href='https://vk.me/psychologist_maxim_sedov' class='diagnostics' target='_blank'>Записаться на консультацию к психологу</a>");
     }
     if(result > 5 && result <= 10){
-      $('.result').html("<span style='color:ForestGreen;'>6–10 Нормальное, но несчастливое состояние. Вы набрали: "+ result + " из 100.</span><br><br><a href='https://vk.me/public212988636' class='diagnostics' target='_blank'>Записаться на консультацию к психологу</a>");
+      $('.result').html("<span style='color:ForestGreen;'>6–10 Нормальное, но несчастливое состояние. Вы набрали: "+ result + " из 100.</span><br><br><a href='https://vk.me/psychologist_maxim_sedov' class='diagnostics' target='_blank'>Записаться на консультацию к психологу</a>");
     }
     if(result > 10 && result <= 25){
-      $('.result').html("<span style='color:Orange; font-family: VK-Medium;'>11–25 Слабо выраженная депрессия. Вы набрали: " + result + " из 100.</span><br><br><a href='https://vk.me/public212988636' class='diagnostics' target='_blank'>Записаться на консультацию к психологу</a>");
+      $('.result').html("<span style='color:Orange; font-family: VK-Medium;'>11–25 Слабо выраженная депрессия. Вы набрали: " + result + " из 100.</span><br><br><a href='https://vk.me/psychologist_maxim_sedov' class='diagnostics' target='_blank'>Записаться на консультацию к психологу</a>");
     }
     if(result > 25 && result <= 50){
-      $('.result').html("<span style='color:DarkOrange; font-family: VK-Medium;'>26–50 Умеренная депрессия. Вы набрали: " + result + " из 100.</span></span><br><br><a href='https://vk.me/public212988636' class='diagnostics' target='_blank'>Записаться на консультацию к психологу</a>");
+      $('.result').html("<span style='color:DarkOrange; font-family: VK-Medium;'>26–50 Умеренная депрессия. Вы набрали: " + result + " из 100.</span></span><br><br><a href='https://vk.me/psychologist_maxim_sedov' class='diagnostics' target='_blank'>Записаться на консультацию к психологу</a>");
     }
     if(result > 50 && result <= 75){
-      $('.result').html("<span style='color:OrangeRed; font-family: VK-Medium;'>51–75 Сильно выраженная депрессия. Вы набрали: " + result + " из 100.</span><br><br><a href='https://vk.me/public212988636' class='diagnostics' target='_blank'>Записаться на консультацию к психологу</a>");
+      $('.result').html("<span style='color:OrangeRed; font-family: VK-Medium;'>51–75 Сильно выраженная депрессия. Вы набрали: " + result + " из 100.</span><br><br><a href='https://vk.me/psychologist_maxim_sedov' class='diagnostics' target='_blank'>Записаться на консультацию к психологу</a>");
     }
     if(result > 75 && result <= 100){
-      $('.result').html("<span style='color:Red; font-family: VK-Medium;'>76–100 Крайняя степень депрессии. Вы набрали: " + result + " из 100.</span><br><br><a href='https://vk.me/public212988636' class='diagnostics' target='_blank'>Записаться на консультацию к психологу</a>");
+      $('.result').html("<span style='color:Red; font-family: VK-Medium;'>76–100 Крайняя степень депрессии. Вы набрали: " + result + " из 100.</span><br><br><a href='https://vk.me/psychologist_maxim_sedov' class='diagnostics' target='_blank'>Записаться на консультацию к психологу</a>");
     }
-       vkBridge.send("VKWebAppJoinGroup", {"group_id": 212988636});
+       vkBridge.send("VKWebAppJoinGroup", {"group_id": 160359504});
   });
 });
