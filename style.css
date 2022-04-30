@@ -56,6 +56,9 @@ button:focus {
 /* ================================== */
 
 .headbox {
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
   width: 100%;
   height: 56px;
   background: #fff;
@@ -91,7 +94,6 @@ button:focus {
 .cont {
   width: 100%;
   height: auto;
-  min-height:
   background: #fff;
   border-radius: 8px;
   margin-bottom: 5px;
