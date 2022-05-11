@@ -2,378 +2,377 @@
 <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <script>vkBridge.send('VKWebAppInit')</script>
-<script src="script.js"></script>
 <!-- Стили CSS -->
 <link rel="stylesheet" href="fonts.css">
 <link rel="stylesheet" href="style.css">
 <html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Шкала депрессии Бернса</title>
+    <title>Test</title>
   </head>
   <body>
 <div class="headbox"><span class="top">Шкала депрессии Бернса</span></div>
 <div class="description">
     Заполняя опросник, внимательно прочитайте каждый пункт и оцените, как Вы себя чувствовали в течение последней недели, включая сегодняшний день.<br><br>Если Вы сомневаетесь, дайте ответ, точнее других отражающий ваше состояние. Необходимо ответить на все вопросы. Независимо от результата это может быть Ваш первый шаг к улучшению эмоционального состояния.
 </div>
-
-<!-- Начало теста -->
-    <div class="questions">
-      <div class="cont question-1">
+<div class="qw"></div>
+    <div class="questions"> <!-- Родительский блок вопросов -->
+      <div class="cont question0">
         <span class="que">1/25 Вам грустно или вы в плохом настроении?</span>
-        <input id="q0" type="radio" value="0" name="question-1">
+        <input id="q0" type="radio" value="0" data-id="1" class="quest" name="question-1">
         <label for="q0">Ни разу</label>
-        <input id="q1" type="radio" value="1" name="question-1">
+        <input id="q1" type="radio" value="1" data-id="1" class="quest" name="question-1">
         <label for="q1">Иногда</label>
-        <input id="q2" type="radio" value="2" name="question-1">
+        <input id="q2" type="radio" value="2" data-id="1" class="quest" name="question-1">
         <label for="q2">Умеренно</label>
-        <input id="q3" type="radio" value="3" name="question-1">
+        <input id="q3" type="radio" value="3" data-id="1" class="quest" name="question-1">
         <label for="q3">Часто</label>
-        <input id="q4" type="radio" value="4" name="question-1">
+        <input id="q4" type="radio" value="4" data-id="1" class="quest" name="question-1">
         <label for="q4">Крайне часто</label>
-        <button class="button-1" type="button" disabled>Следующий вопрос</button>
+        <button class="button but1" data-id="1" disabled>Следующий вопрос</button>
       </div>
-      <div class="cont question-2">
+      <div class="cont question1">
         <span class="que">2/25 Чувствуете грусть, удручены?</span>
-        <input id="q5" type="radio" value="0" name="question-2">
+        <input id="q5" type="radio" value="0" data-id="2" class="quest" name="question-2">
         <label for="q5">Ни разу</label>
-        <input id="q6" type="radio" value="1" name="question-2">
+        <input id="q6" type="radio" value="1" data-id="2" class="quest" name="question-2">
         <label for="q6">Иногда</label>
-        <input id="q7" type="radio" value="2" name="question-2">
+        <input id="q7" type="radio" value="2" data-id="2" class="quest" name="question-2">
         <label for="q7">Умеренно</label>
-        <input id="q8" type="radio" value="3" name="question-2">
+        <input id="q8" type="radio" value="3" data-id="2" class="quest" name="question-2">
         <label for="q8">Часто</label>
-        <input id="q9" type="radio" value="4" name="question-2">
+        <input id="q9" type="radio" value="4" data-id="2" class="quest" name="question-2">
         <label for="q9">Крайне часто</label>
-        <button class="button-2" type="button" disabled>Следующий вопрос</button>
+        <button class="button but2" data-id="2" disabled>Следующий вопрос</button>
       </div>
-      <div class="cont question-3">
+      <div class="cont question2">
         <span class="que">3/25 Чувствуете уныние?</span>
-        <input id="q10" type="radio" value="0" name="question-3">
+        <input id="q10" type="radio" value="0" data-id="3" class="quest" name="question-3">
         <label for="q10">Ни разу</label>
-        <input id="q11" type="radio" value="1" name="question-3">
+        <input id="q11" type="radio" value="1" data-id="3" class="quest" name="question-3">
         <label for="q11">Иногда</label>
-        <input id="q12" type="radio" value="2" name="question-3">
+        <input id="q12" type="radio" value="2" data-id="3" class="quest" name="question-3">
         <label for="q12">Умеренно</label>
-        <input id="q13" type="radio" value="3" name="question-3">
+        <input id="q13" type="radio" value="3" data-id="3" class="quest" name="question-3">
         <label for="q13">Часто</label>
-        <input id="q14" type="radio" value="4" name="question-3">
+        <input id="q14" type="radio" value="4" data-id="3" class="quest" name="question-3">
         <label for="q14">Крайне часто</label>
-        <button class="button-3" type="button" disabled>Следующий вопрос</button>
+        <button class="button but3" data-id="3" disabled>Следующий вопрос</button>
       </div>
-      <div class="cont question-4">
+      <div class="cont question3">
         <span class="que">4/25 Испытываете чувство безнадежности?</span>
-        <input id="q15" type="radio" value="0" name="question-4">
+        <input id="q15" type="radio" value="0" data-id="4" class="quest" name="question-4">
         <label for="q15">Ни разу</label>
-        <input id="q16" type="radio" value="1" name="question-4">
+        <input id="q16" type="radio" value="1" data-id="4" class="quest" name="question-4">
         <label for="q16">Иногда</label>
-        <input id="q17" type="radio" value="2" name="question-4">
+        <input id="q17" type="radio" value="2" data-id="4" class="quest" name="question-4">
         <label for="q17">Умеренно</label>
-        <input id="q18" type="radio" value="3" name="question-4">
+        <input id="q18" type="radio" value="3" data-id="4" class="quest" name="question-4">
         <label for="q18">Часто</label>
-        <input id="q19" type="radio" value="4" name="question-4">
+        <input id="q19" type="radio" value="4" data-id="4" class="quest" name="question-4">
         <label for="q19">Крайне часто</label>
-        <button class="button-4" type="button" disabled>Следующий вопрос</button>
+        <button class="button but4" data-id="4" disabled>Следующий вопрос</button>
       </div>
-      <div class="cont question-5">
+      <div class="cont question4">
         <span class="que">5/25 Имеете низкую самооценку?</span>
-        <input id="q20" type="radio" value="0" name="question-5">
+        <input id="q20" type="radio" value="0" data-id="5" class="quest" name="question-5">
         <label for="q20">Ни разу</label>
-        <input id="q21" type="radio" value="1" name="question-5">
+        <input id="q21" type="radio" value="1" data-id="5" class="quest" name="question-5">
         <label for="q21">Иногда</label>
-        <input id="q22" type="radio" value="2" name="question-5">
+        <input id="q22" type="radio" value="2" data-id="5" class="quest" name="question-5">
         <label for="q22">Умеренно</label>
-        <input id="q23" type="radio" value="3" name="question-5">
+        <input id="q23" type="radio" value="3" data-id="5" class="quest" name="question-5">
         <label for="q23">Часто</label>
-        <input id="q24" type="radio" value="4" name="question-5">
+        <input id="q24" type="radio" value="4" data-id="5" class="quest" name="question-5">
         <label for="q24">Крайне часто</label>
-        <button class="button-5" type="button" disabled>Следующий вопрос</button>
+        <button class="button but5" data-id="5" disabled>Следующий вопрос</button>
       </div>
-      <div class="cont question-6">
+      <div class="cont question5">
         <span class="que">6/25 Вам грустно или вы в плохом настроении?</span>
-        <input id="q25" type="radio" value="0" name="question-6">
+        <input id="q25" type="radio" value="0" data-id="6" class="quest" name="question-6">
         <label for="q25">Ни разу</label>
-        <input id="q26" type="radio" value="1" name="question-6">
+        <input id="q26" type="radio" value="1" data-id="6" class="quest" name="question-6">
         <label for="q26">Иногда</label>
-        <input id="q27" type="radio" value="2" name="question-6">
+        <input id="q27" type="radio" value="2" data-id="6" class="quest" name="question-6">
         <label for="q27">Умеренно</label>
-        <input id="q28" type="radio" value="3" name="question-6">
+        <input id="q28" type="radio" value="3" data-id="6" class="quest" name="question-6">
         <label for="q28">Часто</label>
-        <input id="q29" type="radio" value="4" name="question-6">
+        <input id="q29" type="radio" value="4" data-id="6" class="quest" name="question-6">
         <label for="q29">Крайне часто</label>
-        <button class="button-6" type="button" disabled>Следующий вопрос</button>
+        <button class="button but6" data-id="6" disabled>Следующий вопрос</button>
       </div>
-      <div class="cont question-7">
+      <div class="cont question6">
         <span class="que">7/25 Испытываете чувство собственной ничтожности и непригодности?</span>
-        <input id="q30" type="radio" value="0" name="question-7">
+        <input id="q30" type="radio" value="0" data-id="7" class="quest" name="question-7">
         <label for="q30">Ни разу</label>
-        <input id="q31" type="radio" value="1" name="question-7">
+        <input id="q31" type="radio" value="1" data-id="7" class="quest" name="question-7">
         <label for="q31">Иногда</label>
-        <input id="q32" type="radio" value="2" name="question-7">
+        <input id="q32" type="radio" value="2" data-id="7" class="quest" name="question-7">
         <label for="q32">Умеренно</label>
-        <input id="q33" type="radio" value="3" name="question-7">
+        <input id="q33" type="radio" value="3" data-id="7" class="quest" name="question-7">
         <label for="q33">Часто</label>
-        <input id="q34" type="radio" value="4" name="question-7">
+        <input id="q34" type="radio" value="4" data-id="7" class="quest" name="question-7">
         <label for="q34">Крайне часто</label>
-        <button class="button-7" type="button" disabled>Следующий вопрос</button>
+        <button class="button but7" data-id="7" disabled>Следующий вопрос</button>
       </div>
-      <div class="cont question-8">
+      <div class="cont question7">
         <span class="que">8/25 Испытываете чувство вины или стыда?</span>
-        <input id="q35" type="radio" value="0" name="question-8">
+        <input id="q35" type="radio" value="0" data-id="8" class="quest" name="question-8">
         <label for="q35">Ни разу</label>
-        <input id="q36" type="radio" value="1" name="question-8">
+        <input id="q36" type="radio" value="1" data-id="8" class="quest" name="question-8">
         <label for="q36">Иногда</label>
-        <input id="q37" type="radio" value="2" name="question-8">
+        <input id="q37" type="radio" value="2" data-id="8" class="quest" name="question-8">
         <label for="q37">Умеренно</label>
-        <input id="q38" type="radio" value="3" name="question-8">
+        <input id="q38" type="radio" value="3" data-id="8" class="quest" name="question-8">
         <label for="q38">Часто</label>
-        <input id="q39" type="radio" value="4" name="question-8">
+        <input id="q39" type="radio" value="4" data-id="8" class="quest" name="question-8">
         <label for="q39">Крайне часто</label>
-        <button class="button-8" type="button" disabled>Следующий вопрос</button>
+        <button class="button but8" data-id="8" disabled>Следующий вопрос</button>
       </div>
-      <div class="cont question-9">
+      <div class="cont question8">
         <span class="que">9/25 Критикуете или обвиняете самого себя?</span>
-        <input id="q40" type="radio" value="0" name="question-9">
+        <input id="q40" type="radio" value="0" data-id="9" class="quest" name="question-9">
         <label for="q40">Ни разу</label>
-        <input id="q41" type="radio" value="1" name="question-9">
+        <input id="q41" type="radio" value="1" data-id="9" class="quest" name="question-9">
         <label for="q41">Иногда</label>
-        <input id="q42" type="radio" value="2" name="question-9">
+        <input id="q42" type="radio" value="2" data-id="9" class="quest" name="question-9">
         <label for="q42">Умеренно</label>
-        <input id="q43" type="radio" value="3" name="question-9">
+        <input id="q43" type="radio" value="3" data-id="9" class="quest" name="question-9">
         <label for="q43">Часто</label>
-        <input id="q44" type="radio" value="4" name="question-9">
+        <input id="q44" type="radio" value="4" data-id="9" class="quest" name="question-9">
         <label for="q44">Крайне часто</label>
-        <button class="button-9" type="button" disabled>Следующий вопрос</button>
+        <button class="button but9" data-id="9" disabled>Следующий вопрос</button>
       </div>
-      <div class="cont question-10">
+      <div class="cont question9">
         <span class="que">10/25 Испытываете трудности с принятием решений?</span>
-        <input id="q45" type="radio" value="0" name="question-10">
+        <input id="q45" type="radio" value="0" data-id="10" class="quest" name="question-10">
         <label for="q45">Ни разу</label>
-        <input id="q46" type="radio" value="1" name="question-10">
+        <input id="q46" type="radio" value="1" data-id="10" class="quest" name="question-10">
         <label for="q46">Иногда</label>
-        <input id="q47" type="radio" value="2" name="question-10">
+        <input id="q47" type="radio" value="2" data-id="10" class="quest" name="question-10">
         <label for="q47">Умеренно</label>
-        <input id="q48" type="radio" value="3" name="question-10">
+        <input id="q48" type="radio" value="3" data-id="10" class="quest" name="question-10">
         <label for="q48">Часто</label>
-        <input id="q49" type="radio" value="4" name="question-10">
+        <input id="q49" type="radio" value="4" data-id="10" class="quest" name="question-10">
         <label for="q49">Крайне часто</label>
-        <button class="button-10" type="button" disabled>Следующий вопрос</button>
+        <button class="button but10" data-id="10" disabled>Следующий вопрос</button>
       </div>
-      <div class="cont question-11">
+      <div class="cont question10">
         <span class="que">11/25 Чувствуете потерю интереса к членам семьи, друзьям, коллегам?</span>
-        <input id="q50" type="radio" value="0" name="question-11">
+        <input id="q50" type="radio" value="0" data-id="11" class="quest" name="question-11">
         <label for="q50">Ни разу</label>
-        <input id="q51" type="radio" value="1" name="question-11">
+        <input id="q51" type="radio" value="1" data-id="11" class="quest" name="question-11">
         <label for="q51">Иногда</label>
-        <input id="q52" type="radio" value="2" name="question-11">
+        <input id="q52" type="radio" value="2" data-id="11" class="quest" name="question-11">
         <label for="q52">Умеренно</label>
-        <input id="q53" type="radio" value="3" name="question-11">
+        <input id="q53" type="radio" value="3" data-id="11" class="quest" name="question-11">
         <label for="q53">Часто</label>
-        <input id="q54" type="radio" value="4" name="question-11">
+        <input id="q54" type="radio" value="4" data-id="11" class="quest" name="question-11">
         <label for="q54">Крайне часто</label>
-        <button class="button-11" type="button" disabled>Следующий вопрос</button>
+        <button class="button but11" data-id="11" disabled>Следующий вопрос</button>
       </div>
-      <div class="cont question-12">
+      <div class="cont question11">
         <span class="que">12/25 Испытываете одиночество?</span>
-        <input id="q55" type="radio" value="0" name="question-12">
+        <input id="q55" type="radio" value="0" data-id="12" class="quest" name="question-12">
         <label for="q55">Ни разу</label>
-        <input id="q56" type="radio" value="1" name="question-12">
+        <input id="q56" type="radio" value="1" data-id="12" class="quest" name="question-12">
         <label for="q56">Иногда</label>
-        <input id="q57" type="radio" value="2" name="question-12">
+        <input id="q57" type="radio" value="2" data-id="12" class="quest" name="question-12">
         <label for="q57">Умеренно</label>
-        <input id="q58" type="radio" value="3" name="question-12">
+        <input id="q58" type="radio" value="3" data-id="12" class="quest" name="question-12">
         <label for="q58">Часто</label>
-        <input id="q59" type="radio" value="4" name="question-12">
+        <input id="q59" type="radio" value="4" data-id="12" class="quest" name="question-12">
         <label for="q59">Крайне часто</label>
-        <button class="button-12" type="button" disabled>Следующий вопрос</button>
+        <button class="button but12" data-id="12" disabled>Следующий вопрос</button>
       </div>
-      <div class="cont question-13">
+      <div class="cont question12">
         <span class="que">13/25 Проводите меньше времени с семьей или с друзьями?</span>
-        <input id="q60" type="radio" value="0" name="question-13">
+        <input id="q60" type="radio" value="0" data-id="13" class="quest" name="question-13">
         <label for="q60">Ни разу</label>
-        <input id="q61" type="radio" value="1" name="question-13">
+        <input id="q61" type="radio" value="1" data-id="13" class="quest" name="question-13">
         <label for="q61">Иногда</label>
-        <input id="q62" type="radio" value="2" name="question-13">
+        <input id="q62" type="radio" value="2" data-id="13" class="quest" name="question-13">
         <label for="q62">Умеренно</label>
-        <input id="q63" type="radio" value="3" name="question-13">
+        <input id="q63" type="radio" value="3" data-id="13" class="quest" name="question-13">
         <label for="q63">Часто</label>
-        <input id="q64" type="radio" value="4" name="question-13">
+        <input id="q64" type="radio" value="4" data-id="13" class="quest" name="question-13">
         <label for="q64">Крайне часто</label>
-        <button class="button-13" type="button" disabled>Следующий вопрос</button>
+        <button class="button but13" data-id="13" disabled>Следующий вопрос</button>
       </div>
-      <div class="cont question-14">
+      <div class="cont question13">
         <span class="que">14/25 Чувствуете потерю мотивации?</span>
-        <input id="q65" type="radio" value="0" name="question-14">
+        <input id="q65" type="radio" value="0" data-id="14" class="quest" name="question-14">
         <label for="q65">Ни разу</label>
-        <input id="q66" type="radio" value="1" name="question-14">
+        <input id="q66" type="radio" value="1" data-id="14" class="quest" name="question-14">
         <label for="q66">Иногда</label>
-        <input id="q67" type="radio" value="2" name="question-14">
+        <input id="q67" type="radio" value="2" data-id="14" class="quest" name="question-14">
         <label for="q67">Умеренно</label>
-        <input id="q68" type="radio" value="3" name="question-14">
+        <input id="q68" type="radio" value="3" data-id="14" class="quest" name="question-14">
         <label for="q68">Часто</label>
-        <input id="q69" type="radio" value="4" name="question-14">
+        <input id="q69" type="radio" value="4" data-id="14" class="quest" name="question-14">
         <label for="q69">Крайне часто</label>
-        <button class="button-14" type="button" disabled>Следующий вопрос</button>
+        <button class="button but14" data-id="14" disabled>Следующий вопрос</button>
       </div>
-      <div class="cont question-15">
+      <div class="cont question14">
         <span class="que">15/25 Чувствуете потерю интереса к работе или другим занятиям?</span>
-        <input id="q70" type="radio" value="0" name="question-15">
+        <input id="q70" type="radio" value="0" data-id="15" class="quest" name="question-15">
         <label for="q70">Ни разу</label>
-        <input id="q71" type="radio" value="1" name="question-15">
+        <input id="q71" type="radio" value="1" data-id="15" class="quest" name="question-15">
         <label for="q71">Иногда</label>
-        <input id="q72" type="radio" value="2" name="question-15">
+        <input id="q72" type="radio" value="2" data-id="15" class="quest" name="question-15">
         <label for="q72">Умеренно</label>
-        <input id="q73" type="radio" value="3" name="question-15">
+        <input id="q73" type="radio" value="3" data-id="15" class="quest" name="question-15">
         <label for="q73">Часто</label>
-        <input id="q74" type="radio" value="4" name="question-15">
+        <input id="q74" type="radio" value="4" data-id="15" class="quest" name="question-15">
         <label for="q74">Крайне часто</label>
-        <button class="button-15" type="button" disabled>Следующий вопрос</button>
+        <button class="button but15" data-id="15" disabled>Следующий вопрос</button>
       </div>
-      <div class="cont question-16">
+      <div class="cont question15">
         <span class="que">16/25 Избегаете работы и другой деятельности?</span>
-        <input id="q75" type="radio" value="0" name="question-16">
+        <input id="q75" type="radio" value="0" data-id="16" class="quest" name="question-16">
         <label for="q75">Ни разу</label>
-        <input id="q76" type="radio" value="1" name="question-16">
+        <input id="q76" type="radio" value="1" data-id="16" class="quest" name="question-16">
         <label for="q76">Иногда</label>
-        <input id="q77" type="radio" value="2" name="question-16">
+        <input id="q77" type="radio" value="2" data-id="16" class="quest" name="question-16">
         <label for="q77">Умеренно</label>
-        <input id="q78" type="radio" value="3" name="question-16">
+        <input id="q78" type="radio" value="3" data-id="16" class="quest" name="question-16">
         <label for="q78">Часто</label>
-        <input id="q79" type="radio" value="4" name="question-16">
+        <input id="q79" type="radio" value="4" data-id="16" class="quest" name="question-16">
         <label for="q79">Крайне часто</label>
-        <button class="button-16" type="button" disabled>Следующий вопрос</button>
+        <button class="button but16" data-id="16" disabled>Следующий вопрос</button>
       </div>
-      <div class="cont question-17">
+      <div class="cont question16">
         <span class="que">17/25 Ощущаете потерю удовольствия и нехватку удовлетворения от жизни?</span>
-        <input id="q80" type="radio" value="0" name="question-17">
+        <input id="q80" type="radio" value="0" data-id="17" class="quest" name="question-17">
         <label for="q80">Ни разу</label>
-        <input id="q81" type="radio" value="1" name="question-17">
+        <input id="q81" type="radio" value="1" data-id="17" class="quest" name="question-17">
         <label for="q81">Иногда</label>
-        <input id="q82" type="radio" value="2" name="question-17">
+        <input id="q82" type="radio" value="2" data-id="17" class="quest" name="question-17">
         <label for="q82">Умеренно</label>
-        <input id="q83" type="radio" value="3" name="question-17">
+        <input id="q83" type="radio" value="3" data-id="17" class="quest" name="question-17">
         <label for="q83">Часто</label>
-        <input id="q84" type="radio" value="4" name="question-17">
+        <input id="q84" type="radio" value="4" data-id="17" class="quest" name="question-17">
         <label for="q84">Крайне часто</label>
-        <button class="button-17" type="button" disabled>Следующий вопрос</button>
+        <button class="button but17" data-id="17" disabled>Следующий вопрос</button>
       </div>
-      <div class="cont question-18">
+      <div class="cont question17">
         <span class="que">18/25 Чувствуете усталость?</span>
-        <input id="q85" type="radio" value="0" name="question-18">
+        <input id="q85" type="radio" value="0" data-id="18" class="quest" name="question-18">
         <label for="q85">Ни разу</label>
-        <input id="q86" type="radio" value="1" name="question-18">
+        <input id="q86" type="radio" value="1" data-id="18" class="quest" name="question-18">
         <label for="q86">Иногда</label>
-        <input id="q87" type="radio" value="2" name="question-18">
+        <input id="q87" type="radio" value="2" data-id="18" class="quest" name="question-18">
         <label for="q87">Умеренно</label>
-        <input id="q88" type="radio" value="3" name="question-18">
+        <input id="q88" type="radio" value="3" data-id="18" class="quest" name="question-18">
         <label for="q88">Часто</label>
-        <input id="q89" type="radio" value="4" name="question-18">
+        <input id="q89" type="radio" value="4" data-id="18" class="quest" name="question-18">
         <label for="q89">Крайне часто</label>
-        <button class="button-18" type="button" disabled>Следующий вопрос</button>
+        <button class="button but18" data-id="18" disabled>Следующий вопрос</button>
       </div>
-      <div class="cont question-19">
+      <div class="cont question18">
         <span class="que">19/25 Испытываете затруднения со сном или, наоборот, слишком много спите?</span>
-        <input id="q90" type="radio" value="0" name="question-19">
+        <input id="q90" type="radio" value="0" data-id="19" class="quest" name="question-19">
         <label for="q90">Ни разу</label>
-        <input id="q91" type="radio" value="1" name="question-19">
+        <input id="q91" type="radio" value="1" data-id="19" class="quest" name="question-19">
         <label for="q91">Иногда</label>
-        <input id="q92" type="radio" value="2" name="question-19">
+        <input id="q92" type="radio" value="2" data-id="19" class="quest" name="question-19">
         <label for="q92">Умеренно</label>
-        <input id="q93" type="radio" value="3" name="question-19">
+        <input id="q93" type="radio" value="3" data-id="19" class="quest" name="question-19">
         <label for="q93">Часто</label>
-        <input id="q94" type="radio" value="4" name="question-19">
+        <input id="q94" type="radio" value="4" data-id="19" class="quest" name="question-19">
         <label for="q94">Крайне часто</label>
-        <button class="button-19" type="button" disabled>Следующий вопрос</button>
+        <button class="button but19" data-id="19" disabled>Следующий вопрос</button>
       </div>
-      <div class="cont question-20">
+      <div class="cont question19">
         <span class="que">20/25 Имеете сниженный или, наоборот, повышенный аппетит?</span>
-        <input id="q95" type="radio" value="0" name="question-20">
+        <input id="q95" type="radio" value="0" data-id="20" class="quest" name="question-20">
         <label for="q95">Ни разу</label>
-        <input id="q96" type="radio" value="1" name="question-20">
+        <input id="q96" type="radio" value="1" data-id="20" class="quest" name="question-20">
         <label for="q96">Иногда</label>
-        <input id="q97" type="radio" value="2" name="question-20">
+        <input id="q97" type="radio" value="2" data-id="20" class="quest" name="question-20">
         <label for="q97">Умеренно</label>
-        <input id="q98" type="radio" value="3" name="question-20">
+        <input id="q98" type="radio" value="3" data-id="20" class="quest" name="question-20">
         <label for="q98">Часто</label>
-        <input id="q99" type="radio" value="4" name="question-20">
+        <input id="q99" type="radio" value="4" data-id="20" class="quest" name="question-20">
         <label for="q99">Крайне часто</label>
-        <button class="button-20" type="button" disabled>Следующий вопрос</button>
+        <button class="button but20" data-id="20" disabled>Следующий вопрос</button>
       </div>
-      <div class="cont question-21">
+      <div class="cont question20">
         <span class="que">21/25 Замечаете потерю интереса к сексу?</span>
-        <input id="q100" type="radio" value="0" name="question-21">
+        <input id="q100" type="radio" value="0" data-id="21" class="quest" name="question-21">
         <label for="q100">Ни разу</label>
-        <input id="q101" type="radio" value="1" name="question-21">
+        <input id="q101" type="radio" value="1" data-id="21" class="quest" name="question-21">
         <label for="q101">Иногда</label>
-        <input id="q102" type="radio" value="2" name="question-21">
+        <input id="q102" type="radio" value="2" data-id="21" class="quest" name="question-21">
         <label for="q102">Умеренно</label>
-        <input id="q103" type="radio" value="3" name="question-21">
+        <input id="q103" type="radio" value="3" data-id="21" class="quest" name="question-21">
         <label for="q103">Часто</label>
-        <input id="q104" type="radio" value="4" name="question-21">
+        <input id="q104" type="radio" value="4" data-id="21" class="quest" name="question-21">
         <label for="q104">Крайне часто</label>
-        <button class="button-21" type="button" disabled>Следующий вопрос</button>
+        <button class="button but21" data-id="21" disabled>Следующий вопрос</button>
       </div>
-      <div class="cont question-22">
+      <div class="cont question21">
         <span class="que">22/25 Беспокоитесь по поводу своего здоровья?</span>
-        <input id="q105" type="radio" value="0" name="question-22">
+        <input id="q105" type="radio" value="0" data-id="22" class="quest" name="question-22">
         <label for="q105">Ни разу</label>
-        <input id="q106" type="radio" value="1" name="question-22">
+        <input id="q106" type="radio" value="1" data-id="22" class="quest" name="question-22">
         <label for="q106">Иногда</label>
-        <input id="q107" type="radio" value="2" name="question-22">
+        <input id="q107" type="radio" value="2" data-id="22" class="quest" name="question-22">
         <label for="q107">Умеренно</label>
-        <input id="q108" type="radio" value="3" name="question-22">
+        <input id="q108" type="radio" value="3" data-id="22" class="quest" name="question-22">
         <label for="q108">Часто</label>
-        <input id="q109" type="radio" value="4" name="question-22">
+        <input id="q109" type="radio" value="4" data-id="22" class="quest" name="question-22">
         <label for="q109">Крайне часто</label>
-        <button class="button-22" type="button" disabled>Следующий вопрос</button>
+        <button class="button but22" data-id="22" disabled>Следующий вопрос</button>
       </div>
-      <div class="cont question-23">
+      <div class="cont question22">
         <span class="que">23/25 Имеются ли у вас суицидальные мысли?</span>
-        <input id="q110" type="radio" value="0" name="question-23">
+        <input id="q110" type="radio" value="0" data-id="23" class="quest" name="question-23">
         <label for="q110">Ни разу</label>
-        <input id="q111" type="radio" value="1" name="question-23">
+        <input id="q111" type="radio" value="1" data-id="23" class="quest" name="question-23">
         <label for="q111">Иногда</label>
-        <input id="q112" type="radio" value="2" name="question-23">
+        <input id="q112" type="radio" value="2" data-id="23" class="quest" name="question-23">
         <label for="q112">Умеренно</label>
-        <input id="q113" type="radio" value="3" name="question-23">
+        <input id="q113" type="radio" value="3" data-id="23" class="quest" name="question-23">
         <label for="q113">Часто</label>
-        <input id="q114" type="radio" value="4" name="question-23">
+        <input id="q114" type="radio" value="4" data-id="23" class="quest" name="question-23">
         <label for="q114">Крайне часто</label>
-        <button class="button-23" type="button" disabled>Следующий вопрос</button>
+        <button class="button but23" data-id="23" disabled>Следующий вопрос</button>
       </div>
-      <div class="cont question-24">
+      <div class="cont question23">
         <span class="que">24/25 Хотели бы вы окончить свою жизнь?</span>
-        <input id="q115" type="radio" value="0" name="question-24">
+        <input id="q115" type="radio" value="0" data-id="24" class="quest" name="question-24">
         <label for="q115">Ни разу</label>
-        <input id="q116" type="radio" value="1" name="question-24">
+        <input id="q116" type="radio" value="1" data-id="24" class="quest" name="question-24">
         <label for="q116">Иногда</label>
-        <input id="q117" type="radio" value="2" name="question-24">
+        <input id="q117" type="radio" value="2" data-id="24" class="quest" name="question-24">
         <label for="q117">Умеренно</label>
-        <input id="q118" type="radio" value="3" name="question-24">
+        <input id="q118" type="radio" value="3" data-id="24" class="quest" name="question-24">
         <label for="q118">Часто</label>
-        <input id="q119" type="radio" value="4" name="question-24">
+        <input id="q119" type="radio" value="4" data-id="24" class="quest" name="question-24">
         <label for="q119">Крайне часто</label>
-        <button class="button-24" type="button" disabled>Следующий вопрос</button>
+        <button class="button but24" data-id="24" disabled>Следующий вопрос</button>
       </div>
-      <div class="cont question-25">
+      <div class="cont question24">
         <span class="que">25/25 Планируете ли вы навредить себе?</span>
-        <input id="q120" type="radio" value="0" name="question-25">
+        <input id="q120" type="radio" value="0" data-id="25" class="quest" name="question-25">
         <label for="q120">Ни разу</label>
-        <input id="q121" type="radio" value="1" name="question-25">
+        <input id="q121" type="radio" value="1" data-id="25" class="quest" name="question-25">
         <label for="q121">Иногда</label>
-        <input id="q122" type="radio" value="2" name="question-25">
+        <input id="q122" type="radio" value="2" data-id="25" class="quest" name="question-25">
         <label for="q122">Умеренно</label>
-        <input id="q123" type="radio" value="3" name="question-25">
+        <input id="q123" type="radio" value="3" data-id="25" class="quest" name="question-25">
         <label for="q123">Часто</label>
-        <input id="q124" type="radio" value="4" name="question-25">
+        <input id="q124" type="radio" value="4" data-id="25" class="quest" name="question-25">
         <label for="q124">Крайне часто</label>
-        <button class="button-25" type="button" disabled>Результат</button>
+        <button class="button result but25" data-id="25" disabled>Результат</button>
       </div>
 
-      <div class="cont question-result">
+      <div class="cont question25">
         <span><div class="result"></div></span>
       </div>
     </div>
     <!-- Конец теста -->
+    <script src="script.js"></script>
   </body>
 </html>
