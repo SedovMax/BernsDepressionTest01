@@ -232,5 +232,12 @@ $('[name*=question-25]').click(function() {
       $('.result').html("<span style='color:Red; font-family: VK-Medium;'>76–100 Крайняя степень депрессии. Вы набрали: " + result + " из 100.</span><br><br><a href='https://vk.me/psychologist_maxim_sedov' class='diagnostics' target='_blank'>Записаться на консультацию к психологу</a>");
     }
        vkBridge.send("VKWebAppJoinGroup", {"group_id": 160359504});
+
+      // send to Senler
+      vkBridge
+      .send('VKWebAppGetUserInfo')
+      .then(data => {
+        $.post( "https://sweetpad.ru/sedov/senlerHandler.php", { vk_user_id: data.id, result: result } );
+      })
   });
 });
