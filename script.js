@@ -30,8 +30,13 @@ $(document).on('click', '.result', function() {
     id++;
   }
   
+ //===Склонение==================================================
+  
+  let ball = declOfNum(result, ['балл', 'балла', 'баллов']);
+  
  //====Логика результата=========================================
-      $('.result').html("<span style='color:Green; font-family: VK-Medium;'>Вы набрали "+ result + " баллов. Сейчас можно закрыть приложение - интерпретация придет вам в следующем сообщении рассылки.</span><br><br><a onclick='closed();' class='diagnostics'>Закрыть приложение</a>");
+  
+      $('.result').html("<span style='color:blue'; font-family: VK-Medium;'>Вы набрали "+ result + " "+ ball +".</span><br><span style='color:blue'>Сейчас можно закрыть приложение - интерпретация придет вам в следующем сообщении рассылки.</span><br><br><a onclick='closed();' class='diagnostics'>Закрыть приложение</a>");
   
       function closed() {
        vkBridge.send("VKWebAppClose", {"status": "success"});
