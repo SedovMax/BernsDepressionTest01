@@ -36,7 +36,7 @@ $(document).on('click', '.result', function() {
     }
   
       function closed() {
-       vkBridge.send("VKWebAppClose", {"status": "success"};
+       vkBridge.send("VKWebAppClose", {"status": "success"});
       }
   
       vkBridge.send("VKWebAppJoinGroup", {"group_id": 160359504});
