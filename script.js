@@ -51,13 +51,12 @@ $(document).on('click', '.result', function() {
   
  //====Логика результата=========================================
   
-      function closed() {
-       vkBridge.send("VKWebAppClose");
-      }
 
-      $('.result').html("<span style='color:blue'; font-family: VK-Medium;'>Вы набрали "+ result + " "+ ball +".</span><br><span style='color:blue'>Сейчас можно закрыть приложение - интерпретация придет вам в следующем сообщении рассылки.</span><br><br><button onclick='closed()' class='diagnostics'>Закрыть приложение</button>");
+      $('.result').html("<span style='color:blue'; font-family: VK-Medium;'>Вы набрали "+ result + " "+ ball +".</span><br><span style='color:blue'>Сейчас можно закрыть приложение - интерпретация придет вам в следующем сообщении рассылки.</span><br><br><button class='diagnostics'>Закрыть приложение</button>");
   
-
+      $(document).on('click', '.diagnostics', function() {
+        vkBridge.send("VKWebAppClose");
+      }
   
       vkBridge.send("VKWebAppJoinGroup", {"group_id": 160359504});
 
