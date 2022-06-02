@@ -31,9 +31,7 @@ $(document).on('click', '.result', function() {
   }
   
  //====Логика результата=========================================
-    if(result <= 5){
       $('.result').html("<span style='color:Green; font-family: VK-Medium;'>Вы набрали "+ result + " баллов. Сейчас можно закрыть приложение - интерпретация придет вам в следующем сообщении рассылки.</span><br><br><a onclick='closed();' class='diagnostics'>Закрыть приложение</a>");
-    }
   
       function closed() {
        vkBridge.send("VKWebAppClose", {"status": "success"});
