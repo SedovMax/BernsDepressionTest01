@@ -1,19 +1,19 @@
-$(document).ready(function() {                                          // Активация скрипта при загрузке страницы
-  $('.question0').addClass('active');                                   // Первый активный вопрос
+$(document).ready(function() {                                         
+  $('.question0').addClass('active');                                  
 
 // ==== Переходы по вопросам ===========================================
 
-$(document).on('click', '.button', function() {                         // нажатие на кнопку перехода
-  let id = $(this).data('id');                                          // переменная id кнопки перехода
-  $('[class*="question"]').removeClass('active');                       // деактивация прошлого блока
-  $('.question' + id).addClass('active');                               // активация целевого блока
+$(document).on('click', '.button', function() {                        
+  let id = $(this).data('id');                                      
+  $('[class*="question"]').removeClass('active');                       
+  $('.question' + id).addClass('active');                              
 });
 
 // ==== Проверка на состояние кнопок ===================================
 
-$(document).on('click', '.quest', function() {                          // нажатие на вариант вопроса
-  let id = $(this).data('id');                                          // переменная id варианта вопроса
-  $(".but" + id).removeAttr("disabled");                                // активация кнопки перехода при выборе варианта вопроса
+$(document).on('click', '.quest', function() {                          
+  let id = $(this).data('id');                                         
+  $(".but" + id).removeAttr("disabled");                                
 });
 
 // ==== Логика вычесления ==============================================
@@ -32,7 +32,22 @@ $(document).on('click', '.result', function() {
   
  //===Склонение==================================================
   
-  let ball = declOfNum(result, ['балл', 'балла', 'баллов']);
+  function num_word(value, words)
+  {
+    
+	value = Math.abs(value) % 100;
+    
+	let num = value % 10;
+    
+	if(value > 10 && value < 20) return words[2]; 
+	if(num > 1 && num < 5) return words[1];
+	if(num == 1) return words[0];
+    
+	return words[2];
+    
+  }
+  
+  let ball = num_word(result, ['балл', 'балла', 'баллов']);
   
  //====Логика результата=========================================
   
