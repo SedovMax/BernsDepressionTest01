@@ -181,6 +181,7 @@ label:hover {
   background-color: #0b76ef;
   height: 32px;
   color: #fff;
+  cursor: pointer;
 }
 
 .diagnostics:hover {
