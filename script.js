@@ -54,9 +54,9 @@ $(document).on('click', '.result', function() {
 
       $('.result').html("<div style='color:blue; font-family: VK-Medium;'>Вы набрали "+ result + " "+ ball +".</div><div style='color:blue; margin-top:10px;'>Сейчас можно закрыть приложение - интерпретация придет вам в следующем сообщении рассылки.</div><br><br><button type='sumbit' class='diagnostics' href='https://vk.com/im?media=&sel=-160359504' target='blank'>Закрыть приложение</button>");
   
-      $(document).on('click', '.diagnostics', function() {
-	location.reload();
-      });
+//       $(document).on('click', '.diagnostics', function() {
+// 	location.reload();
+//       });
 	
 	
       vkBridge.send("VKWebAppJoinGroup", {"group_id": 160359504});
