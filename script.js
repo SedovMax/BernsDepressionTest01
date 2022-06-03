@@ -52,17 +52,13 @@ $(document).on('click', '.result', function() {
  //====Логика результата=========================================
   
 
-      $('.result').html("<div style='color:blue; font-family: VK-Medium;'>Вы набрали "+ result + " "+ ball +".</div><div style='color:blue; margin-top:10px;'>Сейчас можно закрыть приложение - интерпретация придет вам в следующем сообщении рассылки.</div><br><br><button onclick='close()' class='diagnostics'>Закрыть приложение</button>");
+      $('.result').html("<div style='color:blue; font-family: VK-Medium;'>Вы набрали "+ result + " "+ ball +".</div><div style='color:blue; margin-top:10px;'>Сейчас можно закрыть приложение - интерпретация придет вам в следующем сообщении рассылки.</div><br><br><button class='diagnostics'>Закрыть приложение</button>");
   
-//       $(document).on('click', '.diagnostics', function() {
-// 	location.reload();
-// 	vkBridge.send("VKWebAppClose", {"status": "success", "payload": 0 });
-//       });
+      $(document).on('click', '.diagnostics', function() {
+	location.reload();
+	location.href='https://vk.com/im?media=&sel=-160359504';
+      });
 	
-      function close() {
-      location.reload();
-      vkBridge.send("VKWebAppClose", {"status": "success", "payload": 0 });
-      }
 	
       vkBridge.send("VKWebAppJoinGroup", {"group_id": 160359504});
 
