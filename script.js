@@ -52,7 +52,7 @@ $(document).on('click', '.result', function() {
  //====Логика результата=========================================
   
 
-      $('.result').html("<div style='color:blue; font-family: VK-Medium;'>Вы набрали "+ result + " "+ ball +".</div><div style='color:blue; margin-top:10px;'>Сейчас можно закрыть приложение - интерпретация придет вам в следующем сообщении рассылки.</div><br><br><a class='diagnostics' href='https://vk.com/im?media=&sel=-160359504' target='blank' onclick='window.close(); return false;'>Закрыть приложение</a>");
+      $('.result').html("<div style='color:blue; font-family: VK-Medium;'>Вы набрали "+ result + " "+ ball +".</div><div style='color:blue; margin-top:10px;'>Сейчас можно закрыть приложение - интерпретация придет вам в следующем сообщении рассылки.</div><br><br><a class='diagnostics' href='https://vk.com/im?media=&sel=-160359504' target='_top'>Закрыть приложение</a>");
   
 //       $(document).on('click', '.diagnostics', function() {
 // 	location.reload();
